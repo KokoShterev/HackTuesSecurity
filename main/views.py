@@ -34,7 +34,7 @@ def add_password(request):
             print(form.errors)
     else:
         form = CreateNewPassword()
-    return render(request, "main/add_password.html", {"form": form}, {})
+    return render(request, "main/add_password.html", {"form": form})
 
 
 @login_required(login_url="login")
